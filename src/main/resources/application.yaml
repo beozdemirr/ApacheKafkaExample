@@ -1,0 +1,16 @@
+spring:
+  jackson:
+    date-format: "yyyy-MM-dd HH:mm:ss.SSS"
+    time-zone: "GMT+8"
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: groupId
+      auto-offset-reset: earliest
+
+  cassandra:
+    keyspace-name: kafkaodev
+    schema-action: CREATE_IF_NOT_EXISTS
+    local-datacenter: datacenter1
+    contact-points: 127.0.0.1
+    port: 9042
