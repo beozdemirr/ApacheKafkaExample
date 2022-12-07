@@ -15,12 +15,11 @@ public class ModelController {
 
     final KafkaTemplate<String, Object> kafkaTemplate;
     private final ModelService modelService;
-    private final ModelDtoService modelDtoService;
 
-    public ModelController(KafkaTemplate<String, Object> kafkaTemplate, ModelService modelService, ModelDtoService modelDtoService) {
+    public ModelController(KafkaTemplate<String, Object> kafkaTemplate, ModelService modelService) {
         this.kafkaTemplate = kafkaTemplate;
         this.modelService = modelService;
-        this.modelDtoService = modelDtoService;
+
     }
 
     @PostMapping("/save")
