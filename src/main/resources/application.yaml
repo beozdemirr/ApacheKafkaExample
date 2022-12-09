@@ -7,10 +7,10 @@ spring:
     consumer:
       group-id: groupId
       auto-offset-reset: earliest
-
   cassandra:
-    keyspace-name: kafkaodev
-    schema-action: CREATE_IF_NOT_EXISTS
+    keyspace-name: test
+    schema-action: create_if_not_exists
+    contact-points: cassandra
     local-datacenter: datacenter1
-    contact-points: 127.0.0.1
     port: 9042
+    create-keyspace: true

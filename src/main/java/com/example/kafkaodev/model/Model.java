@@ -9,7 +9,7 @@ import java.util.Date;
 import java.util.List;
 
 @Data
-@Table("olsunmu")
+@Table("user")
 public class Model {
 
     @PrimaryKey
